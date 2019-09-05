@@ -1,11 +1,11 @@
-package com.example.zhangshihao.mytestapplication;
+package com.example.mxm.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.zhangshihao.mytestapplication.novel.NovelActivity;
+import com.example.mxm.myapplication.novel.NovelActivity;
 
 public class MainActivity extends AppCompatActivity {
 

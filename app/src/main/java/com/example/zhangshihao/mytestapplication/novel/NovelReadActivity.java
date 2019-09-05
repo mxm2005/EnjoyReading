@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication.novel;
+package com.example.mxm.myapplication.novel;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.zhangshihao.mytestapplication.BaseActivity;
-import com.example.zhangshihao.mytestapplication.R;
-import com.example.zhangshihao.mytestapplication.novel.model.NovelOpenHelper;
+import com.example.mxm.myapplication.BaseActivity;
+import com.example.mxm.myapplication.R;
+import com.example.mxm.myapplication.novel.model.NovelOpenHelper;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

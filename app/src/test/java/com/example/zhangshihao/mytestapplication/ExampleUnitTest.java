@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication;
+package com.example.mxm.myapplication;
 
 import org.junit.Test;
 

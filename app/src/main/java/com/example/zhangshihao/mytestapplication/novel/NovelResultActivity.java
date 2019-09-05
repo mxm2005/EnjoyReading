@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication.novel;
+package com.example.mxm.myapplication.novel;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,9 +16,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.zhangshihao.mytestapplication.BaseActivity;
-import com.example.zhangshihao.mytestapplication.R;
-import com.example.zhangshihao.mytestapplication.novel.model.NovelInfo;
+import com.example.mxm.myapplication.BaseActivity;
+import com.example.mxm.myapplication.R;
+import com.example.mxm.myapplication.novel.model.NovelInfo;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

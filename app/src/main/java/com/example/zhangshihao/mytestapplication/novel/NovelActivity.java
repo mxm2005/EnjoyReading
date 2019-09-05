@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication.novel;
+package com.example.mxm.myapplication.novel;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -13,8 +13,8 @@ import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.zhangshihao.mytestapplication.BaseActivity;
-import com.example.zhangshihao.mytestapplication.R;
+import com.example.mxm.myapplication.BaseActivity;
+import com.example.mxm.myapplication.R;
 
 import java.io.IOException;
 

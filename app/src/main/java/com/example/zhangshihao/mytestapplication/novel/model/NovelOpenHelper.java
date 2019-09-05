@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication.novel.model;
+package com.example.mxm.myapplication.novel.model;
 
 import android.content.Context;
 import android.database.Cursor;

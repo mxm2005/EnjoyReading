@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication.novel.model;
+package com.example.mxm.myapplication.novel.model;
 
 /**
  * Created by zhangshihao on 2017/9/12.

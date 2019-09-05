@@ -1,4 +1,4 @@
-package com.example.zhangshihao.mytestapplication;
+package com.example.mxm.myapplication;
 
 import android.app.Activity;
 import android.app.Dialog;
