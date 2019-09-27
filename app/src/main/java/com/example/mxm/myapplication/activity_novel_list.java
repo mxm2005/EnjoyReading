@@ -37,7 +37,7 @@ public class activity_novel_list extends AppCompatActivity {
             @Override
             public void convert(ViewHolder holder, String o, int pos)
             {
-                holder.setText(R.id.id_item_list_title, o);
+                holder.setText(R.id.id_item_list_title, o);//test title
             }
 
             @Override
