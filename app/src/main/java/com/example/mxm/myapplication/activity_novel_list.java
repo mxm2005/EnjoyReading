@@ -61,7 +61,7 @@ public class activity_novel_list extends AppCompatActivity {
         no.setImg("/img2.jpg");
         lstN.add(no);
 
-        mListView.setAdapter(new CommonAdapter<NovelInfo>(this, R.layout.item_list, lstN)
+        mListView.setAdapter(new CommonAdapter<NovelInfo>(this, R.layout.activity_novel_list, lstN)
         {
             @Override
             public void convert(ViewHolder holder, String o, int pos)
