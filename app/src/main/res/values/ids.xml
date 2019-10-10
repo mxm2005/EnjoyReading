@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="id_item_list_title" type="id"></item>
+    <item name="id_item_list_summary" type="id"></item>
+    <item name="id_item_list_date" type="id"></item>
+    <item name="id_item_list_auth" type="id"></item>
 </resources>

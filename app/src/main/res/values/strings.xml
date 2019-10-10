@@ -1,4 +1,4 @@
-<resources>
+<resources  xmlns:tools="http://schemas.android.com/tools" tools:locale="UTF-8">
     <string name="app_name">Enjoy Reading</string>
     <string name="action_settings">Settings</string>
     <string name="button_novel">novel</string>
@@ -6,7 +6,7 @@
     <string name="search">search</string>
     <string name="search_cannot_null">condition can\'t be null</string>
     <string name="html_parse_err">HTML parse error</string>
-    <string name="title_activity_novel_list">activity_novel_list</string>
+    <string name="title_activity_novel_list">测试APP</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
