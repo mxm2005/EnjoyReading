@@ -16,7 +16,8 @@ public class db_helper extends SQLiteOpenHelper{
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         // create table Orders(Id integer primary key, CustomName text, OrderPrice integer, Country text);
-        String sql = "create table if not exists " + TABLE_NAME + " (Id integer primary key, CustomName text, OrderPrice integer, Country text)";
+        // (id, url, title, img,intro,author,category,updateTime,novelId)
+        String sql = "create table if not exists " + TABLE_NAME + " (id integer primary key, url text, title text, img text,intro text,author text,category text,updateTime text,novelId integer)";
         sqLiteDatabase.execSQL(sql);
     }
 

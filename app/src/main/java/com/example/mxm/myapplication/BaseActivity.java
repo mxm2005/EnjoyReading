@@ -17,11 +17,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by zhangshihao on 2017/9/13.
+ * Created by mxm on 2017/9/13.
  */
 
 public class BaseActivity extends Activity {
-    public static final String TAG = "zhangshihao";
+    public static final String TAG = "mxm";
     public static final boolean DEBUG = false;
     public static final String SP_NAME = "novel_sp";
 

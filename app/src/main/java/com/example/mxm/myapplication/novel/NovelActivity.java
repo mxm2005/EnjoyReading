@@ -25,7 +25,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 /**
- * Created by zhangshihao on 2017/9/7.
+ * Created by mxm on 2017/9/7.
  */
 
 public class NovelActivity extends BaseActivity {

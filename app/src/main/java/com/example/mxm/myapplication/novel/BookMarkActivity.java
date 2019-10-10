@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by zhangshihao on 2017/9/15.
+ * Created by mxm on 2017/9/15.
  */
 
 public class BookMarkActivity extends BaseActivity {

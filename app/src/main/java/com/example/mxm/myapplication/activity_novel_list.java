@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ListView;
+
+import com.example.mxm.myapplication.db.db_dao;
 import com.example.mxm.myapplication.novel.model.ChatMessage;
 import com.example.mxm.myapplication.novel.model.NovelInfo;
 import com.zhy.adapter.abslistview.CommonAdapter;
@@ -48,7 +50,7 @@ public class activity_novel_list extends AppCompatActivity {
 //            }
 //        });
 
-        List<NovelInfo> lstN=new ArrayList<>();
+        /*List<NovelInfo> lstN=new ArrayList<>();
         NovelInfo no=new NovelInfo();
         no.setId(1);
         no.setTitle("标题1");
@@ -63,7 +65,8 @@ public class activity_novel_list extends AppCompatActivity {
         no2.setImg("/img2.jpg");
         no2.setAuthor("作者2");
         no2.setUpdateTime("2019-10-10");
-        lstN.add(no2);
+        lstN.add(no2);*/
+        List<NovelInfo> lstN=getNovelList();
 
         mListView.setAdapter(new CommonAdapter<NovelInfo>(this, R.layout.item_novel, lstN)
         {
@@ -84,5 +87,13 @@ public class activity_novel_list extends AppCompatActivity {
         });
 
         mListView.setEmptyView(mEmptyView);
+    }
+
+    List<NovelInfo> getNovelList() {
+        List<NovelInfo> reVal = new ArrayList<>();
+        db_dao dao = new db_dao(this);
+        reVal = dao.getAllDate();
+
+        return reVal;
     }
 }

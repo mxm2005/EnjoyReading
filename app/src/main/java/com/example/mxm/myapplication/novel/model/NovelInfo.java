@@ -1,7 +1,7 @@
 package com.example.mxm.myapplication.novel.model;
 
 /**
- * Created by zhangshihao on 2017/9/12.
+ * Created by mxm on 2017/9/12.
  */
 
 public class NovelInfo {
