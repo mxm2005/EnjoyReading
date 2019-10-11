@@ -35,20 +35,20 @@ public class activity_novel_list extends AppCompatActivity {
 
         mListView =  findViewById(R.id.id_listview_list);
         mEmptyView = findViewById(R.id.id_empty_view);
-//        mListView.setAdapter(new CommonAdapter<String>(this, R.layout.item_list, mDatas)
-//        {
-//            @Override
-//            public void convert(ViewHolder holder, String o, int pos)
-//            {
-//                holder.setText(R.id.id_item_list_title, o);//test title
-//            }
-//
-//            @Override
-//            public void onViewHolderCreated(ViewHolder holder, View itemView)
-//            {
-//                super.onViewHolderCreated(holder, itemView);
-//            }
-//        });
+        /*mListView.setAdapter(new CommonAdapter<String>(this, R.layout.item_list, mDatas)
+        {
+            @Override
+            public void convert(ViewHolder holder, String o, int pos)
+            {
+                holder.setText(R.id.id_item_list_title, o);//test title
+            }
+
+            @Override
+            public void onViewHolderCreated(ViewHolder holder, View itemView)
+            {
+                super.onViewHolderCreated(holder, itemView);
+            }
+        });*/
 
         /*List<NovelInfo> lstN=new ArrayList<>();
         NovelInfo no=new NovelInfo();
@@ -66,6 +66,7 @@ public class activity_novel_list extends AppCompatActivity {
         no2.setAuthor("作者2");
         no2.setUpdateTime("2019-10-10");
         lstN.add(no2);*/
+
         List<NovelInfo> lstN=getNovelList();
 
         mListView.setAdapter(new CommonAdapter<NovelInfo>(this, R.layout.item_novel, lstN)
@@ -90,10 +91,13 @@ public class activity_novel_list extends AppCompatActivity {
     }
 
     List<NovelInfo> getNovelList() {
-        List<NovelInfo> reVal = new ArrayList<>();
+        List<NovelInfo> reVal;
         db_dao dao = new db_dao(this);
+        if(!dao.isTableExist())
+            dao.initTable();
         reVal = dao.getAllDate();
-
+        if (reVal == null)
+            reVal = new ArrayList<>();
         return reVal;
     }
 }

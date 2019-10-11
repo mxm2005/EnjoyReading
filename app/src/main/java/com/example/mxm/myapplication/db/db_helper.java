@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class db_helper extends SQLiteOpenHelper{
     private static final int DB_VERSION = 1;
-    private static final String DB_NAME = "novel_db";
+    public static final String DB_NAME = "novel_db";
     public static final String TABLE_NAME = "novel_list";
 
     public db_helper(Context context) {
@@ -27,4 +27,5 @@ public class db_helper extends SQLiteOpenHelper{
         sqLiteDatabase.execSQL(sql);
         onCreate(sqLiteDatabase);
     }
+
 }

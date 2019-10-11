@@ -29,6 +29,37 @@ public class db_dao {
     }
 
     /**
+     * 判断表是否存在
+     */
+    public boolean isTableExist() {
+        boolean result = false;
+        SQLiteDatabase db = null;
+        Cursor cursor = null;
+
+        try {
+            db = dbHelper.getReadableDatabase();
+            String sql = "select count(*) as c from " + db_helper.DB_NAME + " where type ='table' and name ='" + db_helper.TABLE_NAME.trim() + "' ";
+            cursor = db.rawQuery(sql, null);
+            if (cursor.moveToNext()) {
+                int count = cursor.getInt(0);
+                if (count > 0) {
+                    result = true;
+                }
+            }
+        } catch (Exception e) {
+            Log.e(TAG, "", e);
+        } finally {
+            if (cursor != null) {
+                cursor.close();
+            }
+            if (db != null) {
+                db.close();
+            }
+        }
+        return result;
+    }
+
+    /**
      * 判断表中是否有数据
      */
     public boolean isDataExist(){
