@@ -3,17 +3,56 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
              tools:context=".MainActivity">
+    <com.example.mxm.myapplication.novel.SlidingLayout
+        android:id="@+id/slidingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
 
-    <TextView android:id="@+id/id_empty_view" android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_gravity="center"
-              android:visibility="gone"
-              android:text="No Data."
-    />
+    <!--
+        侧滑布局的根节点下，有且只能有两个子元素,这两个子元素必须是四种基本布局之一,
+        即LinearLayout, RelativeLayout, FrameLayout或TableLayout。
+        第一个子元素将做为左侧布局，初始化后被隐藏。第二个子元素将做为右侧布局，
+        也就是当前Activity的主布局，将主要的数据放在里面。
+    -->
 
-    <ListView
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00ccff" >
+
+        <ListView
+            android:id="@+id/left_list_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu" />
+
+
+        <TextView android:id="@+id/id_empty_view" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="No Data." />
+
+        <ListView
             android:id="@+id/id_listview_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+    </LinearLayout>
+    </com.example.mxm.myapplication.novel.SlidingLayout>
+
 
 </FrameLayout>
